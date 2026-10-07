@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fingerprint Test</title>
+</head>
+<body>
+
+    <h2>Fingerprint Authentication Test</h2>
+
+    <button onclick="testFingerprint()">
+        Verify Fingerprint
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        async function testFingerprint() {
+
+            const response = await fetch(
+                "http://127.0.0.1:5000/api/release-paper",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        fingerprint_id: "FP001"
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            document.getElementById("result").innerText =
+                data.message;
+        }
+    </script>
+
+</body>
+</html>

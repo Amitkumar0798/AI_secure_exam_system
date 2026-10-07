@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Secure Exam System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            🔐 AI Secure Exam
+        </div>
+
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Exam</a>
+            <a href="#">Security</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Section -->
+    <main class="container" id="dashboard"></main>
+    <!-- Student Login -->
+<section class="login-section" id="login">
+
+    <div class="login-box">
+
+        <div class="login-icon">🎓</div>
+
+        <h2>Student Verification</h2>
+
+        <p>Enter your details to access the secure examination system.</p>
+
+        <div class="login-input">
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+        </div>
+
+        <div class="login-input">
+            <label>Roll Number</label>
+            <input type="text" id="rollNumber" placeholder="Enter roll number">
+        </div>
+
+        <button id="loginBtn">
+            Verify Student
+        </button>
+
+        <div id="loginStatus"></div>
+
+    </div>
+
+</section>
+
+        <section class="welcome">
+            <h1>AI Based Secure Examination System</h1>
+
+            <p>
+                Secure and intelligent question paper generation
+                with identity and time verification.
+            </p>
+
+            <button id="generateBtn">
+                Generate Question Paper
+            </button>
+        </section>
+
+
+        <!-- System Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h2>AI Paper Generator</h2>
+                <p>Generate a secure question paper automatically.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔐</div>
+                <h2>Encryption</h2>
+                <p>Protect the question paper using encryption.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👆</div>
+                <h2>Fingerprint</h2>
+                <p>Verify student identity before the examination.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h2>RTC Verification</h2>
+                <p>Verify the examination time using RTC.</p>
+            </div>
+
+        </section>
+<!-- Question Paper Generator -->
+<section class="generator" id="generator">
+
+    <h2>Question Paper Generator</h2>
+
+    <p>Configure the question paper before generating it.</p>
+
+    <div class="form-box">
+
+        <div class="input-group">
+            <label>Subject</label>
+            <select id="subject">
+                <option value="">Select Subject</option>
+                <option>C Programming</option>
+                <option>Java</option>
+                <option>Software Engineering</option>
+                <option>Android Application Development</option>
+                <option>Computer Networks</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Number of Questions</label>
+            <select id="questions">
+                <option value="">Select Number</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Difficulty Level</label>
+            <select id="difficulty">
+                <option value="">Select Difficulty</option>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Exam Duration</label>
+            <select id="duration">
+                <option value="">Select Duration</option>
+                <option>30 Minutes</option>
+                <option>60 Minutes</option>
+                <option>90 Minutes</option>
+                <option>120 Minutes</option>
+            </select>
+        </div>
+
+      <button id="generatePaperBtn" disabled>
+    🔒 Generate Paper
+</button>
+
+    </div>
+
+</section>
+<!-- Security Verification -->
+<section class="security" id="security">
+
+    <h2>Security Verification</h2>
+
+    <p class="security-subtitle">
+        Complete all verification steps before accessing the examination.
+    </p>
+
+    <div class="security-cards">
+
+        <div class="security-card">
+            <div class="security-icon">👆</div>
+            <h3>Fingerprint Verification</h3>
+            <p>Verify student identity using fingerprint.</p>
+            <button class="verify-btn" onclick="verifyFingerprint()">
+                Verify Fingerprint
+            </button>
+            <span id="fingerprintStatus">Not Verified</span>
+        </div>
+
+        <div class="security-card">
+            <div class="security-icon">⏰</div>
+            <h3>RTC Time Verification</h3>
+            <p>Verify the examination time using RTC.</p>
+            <button class="verify-btn" onclick="verifyRTC()">
+                Verify Time
+            </button>
+            <span id="rtcStatus">Not Verified</span>
+        </div>
+
+        <div class="security-card">
+            <div class="security-icon">📡</div>
+            <h3>ESP32 Connection</h3>
+            <p>Check secure connection with ESP32.</p>
+            <button class="verify-btn" onclick="connectESP32()">
+                Check Connection
+            </button>
+            <span id="espStatus">Not Connected</span>
+        </div>
+
+    </div>
+
+    <div class="access-box">
+        <h3 id="accessStatus">🔒 Exam Access Locked</h3>
+        <p>Complete all verification steps to unlock the exam.</p>
+    </div>
+
+</section>
+<!-- Exam Countdown -->
+<section class="countdown-section" id="countdown">
+
+    <div class="countdown-box">
+
+        <div class="countdown-icon">⏳</div>
+
+        <h2>Exam Paper Countdown</h2>
+
+        <p>
+            Question paper generation will begin when the countdown reaches zero.
+        </p>
+
+        <div class="timer" id="timer">
+            05:00
+        </div>
+
+        <button id="startTimerBtn">
+            Start 5-Minute Countdown
+        </button>
+
+        <div id="timerMessage"></div>
+
+    </div>
+
+</section>
+<!-- Exam Screen -->
+<section class="exam-section" id="exam">
+    <div class="exam-box">
+
+        <h2>📝 Examination</h2>
+
+        <div class="exam-header">
+            <p><strong>Student:</strong> <span id="examStudentName">-</span></p>
+            <p><strong>Roll Number:</strong> <span id="examRollNumber">-</span></p>
+            <p><strong>Time Remaining:</strong> <span id="examTimer">60:00</span></p>
+        </div>
+
+        <hr>
+
+        <div class="question">
+            <h3>Question 1</h3>
+            <p>Explain the basic concepts of the selected subject.</p>
+
+            <textarea
+                placeholder="Write your answer here..."
+            ></textarea>
+        </div>
+
+        <div class="question">
+            <h3>Question 2</h3>
+            <p>Explain the important features of the selected subject.</p>
+
+            <textarea
+                placeholder="Write your answer here..."
+            ></textarea>
+        </div>
+
+        <div class="question">
+            <h3>Question 3</h3>
+            <p>Explain the working process with a suitable example.</p>
+
+            <textarea
+                placeholder="Write your answer here..."
+            ></textarea>
+        </div>
+
+        <button id="submitExamBtn">
+            Submit Examination
+        </button>
+
+        <div id="examResult"></div>
+
+    </div>
+</section>
+<!-- About Section -->
+<section class="about" id="about">
+
+    <h2>About The System</h2>
+
+    <p>
+        AI Based Secure Examination System is designed to
+        generate and securely deliver question papers while
+        performing identity and time verification.
+    </p>
+
+    <div class="about-features">
+
+        <div>
+            <strong>🤖 AI</strong>
+            <span>Question Paper Generation</span>
+        </div>
+
+        <div>
+            <strong>🔐 Security</strong>
+            <span>Encrypted Paper Transmission</span>
+        </div>
+
+        <div>
+            <strong>📡 ESP32</strong>
+            <span>Secure Device Communication</span>
+        </div>
+
+    </div>
+
+</section>
+    </main>
+
+   
+
+    <section id="submittedExamsSection">
+    <h2>Submitted Exams</h2>
+
+    <button id="viewSubmissionsBtn">
+        View Submitted Exams
+    </button>
+
+    <div id="submissionsContainer"></div>
+</section>
+
+ <script src="script.js"></script>
+
+</body>
+</html>

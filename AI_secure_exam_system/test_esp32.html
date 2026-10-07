@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 Receiver Test</title>
+</head>
+<body>
+
+    <h2>ESP32 Receiver Test</h2>
+
+    <button onclick="testESP32()">
+        Connect ESP32
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        async function testESP32() {
+
+            const response = await fetch(
+                "http://127.0.0.1:5000/api/esp32-receive",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        device_id: "ESP32-001"
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            document.getElementById("result").innerText =
+                data.message;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+[
+    {
+        "student_name": "amit",
+        "roll_number": "123456",
+        "questions": [
+            "Write any two advantages of database security and backup.",
+            "What is SQL? Write any two uses of SQL.",
+            "What is a database? Give one example.",
+            "Explain the difference between DDL and DML commands.",
+            "Define LAN, MAN and WAN.",
+            "Explain the difference between a hub and a switch.",
+            "Define network topology and name any two types.",
+            "What is a database relationship? Name any two types.",
+            "Define DBMS and state two advantages of using a DBMS.",
+            "What is the role of the OSI model in computer networking?"
+        ],
+        "answers": [
+            {
+                "question": "Write any two advantages of database security and backup.",
+                "answer": "msygyfgyfghfgyugfehvbevdkjj."
+            },
+            {
+                "question": "What is SQL? Write any two uses of SQL.",
+                "answer": "dnvhjvbrhvbrjevbrbbj."
+            },
+            {
+                "question": "What is a database? Give one example.",
+                "answer": ""
+            },
+            {
+                "question": "Explain the difference between DDL and DML commands.",
+                "answer": ""
+            },
+            {
+                "question": "Define LAN, MAN and WAN.",
+                "answer": ""
+            },
+            {
+                "question": "Explain the difference between a hub and a switch.",
+                "answer": ""
+            },
+            {
+                "question": "Define network topology and name any two types.",
+                "answer": ""
+            },
+            {
+                "question": "What is a database relationship? Name any two types.",
+                "answer": ""
+            },
+            {
+                "question": "Define DBMS and state two advantages of using a DBMS.",
+                "answer": ""
+            },
+            {
+                "question": "What is the role of the OSI model in computer networking?",
+                "answer": ""
+            }
+        ],
+        "submission_time": "2026-10-03 12:40:12"
+    },
+    {
+        "student_name": "ankit",
+        "roll_number": "124578",
+        "questions": [
+            "Explain any two common network security measures.",
+            "What is the role of the OSI model in computer networking?",
+            "What is a computer network? Give two examples.",
+            "What is a router? State its main function.",
+            "What is a database relationship? Name any two types.",
+            "Write any two advantages of database security and backup.",
+            "What is a database? Give one example.",
+            "Explain the difference between a hub and a switch.",
+            "Define the terms row and column in a database table.",
+            "Define network topology and name any two types."
+        ],
+        "answers": [
+            {
+                "question": "Explain any two common network security measures.",
+                "answer": "alalalalalalalalalalalalalalalalalaa."
+            },
+            {
+                "question": "What is the role of the OSI model in computer networking?",
+                "answer": ""
+            },
+            {
+                "question": "What is a computer network? Give two examples.",
+                "answer": ""
+            },
+            {
+                "question": "What is a router? State its main function.",
+                "answer": ""
+            },
+            {
+                "question": "What is a database relationship? Name any two types.",
+                "answer": ""
+            },
+            {
+                "question": "Write any two advantages of database security and backup.",
+                "answer": ""
+            },
+            {
+                "question": "What is a database? Give one example.",
+                "answer": ""
+            },
+            {
+                "question": "Explain the difference between a hub and a switch.",
+                "answer": ""
+            },
+            {
+                "question": "Define the terms row and column in a database table.",
+                "answer": ""
+            },
+            {
+                "question": "Define network topology and name any two types.",
+                "answer": ""
+            }
+        ],
+        "submission_time": "2026-10-03 13:30:49"
+    },
+    {
+        "student_name": "rohit",
+        "roll_number": "13690000",
+        "questions": [
+            "What is SQL? Write any two uses of SQL.",
+            "Define the terms row and column in a database table.",
+            "What is the role of the OSI model in computer networking?",
+            "What is a database relationship? Name any two types.",
+            "What is a database? Give one example.",
+            "Differentiate between TCP and UDP.",
+            "Define network topology and name any two types.",
+            "Explain the difference between a hub and a switch.",
+            "Define DBMS and state two advantages of using a DBMS.",
+            "What is a router? State its main function."
+        ],
+        "answers": [
+            {
+                "question": "What is SQL? Write any two uses of SQL.",
+                "answer": "wwwwwwwwwwwwwwwwwwwww."
+            },
+            {
+                "question": "Define the terms row and column in a database table.",
+                "answer": "aaaaaaaaaaaaaaaaaaaa."
+            },
+            {
+                "question": "What is the role of the OSI model in computer networking?",
+                "answer": ""
+            },
+            {
+                "question": "What is a database relationship? Name any two types.",
+                "answer": ""
+            },
+            {
+                "question": "What is a database? Give one example.",
+                "answer": ""
+            },
+            {
+                "question": "Differentiate between TCP and UDP.",
+                "answer": ""
+            },
+            {
+                "question": "Define network topology and name any two types.",
+                "answer": ""
+            },
+            {
+                "question": "Explain the difference between a hub and a switch.",
+                "answer": ""
+            },
+            {
+                "question": "Define DBMS and state two advantages of using a DBMS.",
+                "answer": ""
+            },
+            {
+                "question": "What is a router? State its main function.",
+                "answer": ""
+            }
+        ],
+        "submission_time": "2026-10-03 14:58:25"
+    },
+    {
+        "student_name": "fhfhdfh",
+        "roll_number": "35366",
+        "questions": [
+            "Write any two advantages of database security and backup.",
+            "What is a table in a relational database?",
+            "What is a router? State its main function.",
+            "What is a MAC address?",
+            "Explain any two common network security measures.",
+            "Explain the difference between a hub and a switch.",
+            "Explain the difference between DDL and DML commands.",
+            "Differentiate between a primary key and a foreign key.",
+            "Differentiate between TCP and UDP.",
+            "Define LAN, MAN and WAN."
+        ],
+        "answers": [
+            {
+                "question": "Write any two advantages of database security and backup.",
+                "answer": ""
+            },
+            {
+                "question": "What is a table in a relational database?",
+                "answer": "Organized collection of data."
+            },
+            {
+                "question": "What is a router? State its main function.",
+                "answer": "flfsfl"
+            },
+            {
+                "question": "What is a MAC address?",
+                "answer": "lkdfds"
+            },
+            {
+                "question": "Explain any two common network security measures.",
+                "answer": ""
+            },
+            {
+                "question": "Explain the difference between a hub and a switch.",
+                "answer": ""
+            },
+            {
+                "question": "Explain the difference between DDL and DML commands.",
+                "answer": ""
+            },
+            {
+                "question": "Differentiate between a primary key and a foreign key.",
+                "answer": ""
+            },
+            {
+                "question": "Differentiate between TCP and UDP.",
+                "answer": ""
+            },
+            {
+                "question": "Define LAN, MAN and WAN.",
+                "answer": ""
+            }
+        ],
+        "submission_time": "2026-10-06 13:29:09"
+    }
+]

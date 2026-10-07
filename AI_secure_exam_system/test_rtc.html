@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RTC Verification Test</title>
+</head>
+<body>
+
+    <h2>RTC Verification Test</h2>
+
+    <button onclick="verifyRTC()">Verify RTC Time</button>
+
+    <p id="result"></p>
+
+<script>
+    async function verifyRTC() {
+        const result = document.getElementById("result");
+
+        try {
+            const response = await fetch(
+                "http://127.0.0.1:5000/api/exam-status"
+            );
+
+            const data = await response.json();
+
+            if (data.exam_started) {
+                result.innerText =
+                    "✓ RTC Verified - Exam Time Reached";
+            } else {
+                const minutes = Math.floor(data.remaining_seconds / 60);
+                const seconds = data.remaining_seconds % 60;
+
+                result.innerText =
+                    "⏳ RTC Verified - Exam starts in "
+                    + minutes + " min " + seconds + " sec";
+            }
+
+        } catch (error) {
+            result.innerText =
+                "❌ RTC Backend Connection Failed";
+        }
+    }
+</script>
+
+</body>
+</html>
